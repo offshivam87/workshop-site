@@ -17,7 +17,7 @@ const Secone = () => {
             <img src={semicicular} alt=""  className='w-full h-full object-fill'/>
           
         </div>
-        <div className="w-full h-[20vh]"></div>
+        <div className="w-full h-[20vh] bg-[]"></div>
          
                 <h2 className='text-2xl text-white md:text-6xl   mx-auto font-poppins-bold text-center md:top-[78%] absolute top-[88%]'>Dr. Achal Gupta</h2>
                 <p className='text-[0.55rem] text-white md:text-2xl  mx-auto font-poppins-bold text-center md:top-[86%] absolute top-[96%]'>A distinguished Brain and Endoscopic Spine Surgeon based in Lucknow, </p>
