@@ -1,0 +1,22 @@
+@font-face{
+    font-family: poppins-regular;
+    src: url("../src/fonts/Poppins-Regular.ttf")
+}
+
+@font-face{
+    font-family: poppins-bold;
+    src: url("../src/fonts/Poppins-Bold.ttf")
+}
+
+@font-face{
+    font-family: poppins-ExtraBold;
+    src: url("../src/fonts/Poppins-ExtraBold.ttf")
+}
+
+@import "tailwindcss";
+
+@theme{
+    --font-poppins:poppins-regular,"sans-serif";
+    --font-poppins-bold:poppins-bold, "sans-serif";
+    --font-poppins-extraBold:poppins-extraBold,"sans-serif"
+}
