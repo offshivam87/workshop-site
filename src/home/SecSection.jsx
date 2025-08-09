@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import ESS from '../ESS.png'
-import PLACE from '../place.png'
+import PLACE from '../Place.png'
 
 const SecSection = () => {
   return (
