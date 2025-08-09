@@ -10,6 +10,7 @@ import Linephotos from './Linephotos'
 import RegistrationBanner from './RegistrationBanner'
 import Partners from './Partners'
 import Footer from './Footer'
+import ImageSlider from './ImageSlider'
 
 
 const Home = () => {
@@ -25,7 +26,9 @@ const Home = () => {
       <Linephotos/>
       <RegistrationBanner/>
       <Partners/>
+      <ImageSlider/>
       <Footer/>
+      
       
       
     </div>

@@ -24,12 +24,12 @@ const Footer = () => {
     <div className="relative w-full h-[60vh] md:h-[70rem]">
       <img src={footer} alt="footer" className="w-full h-full object-fill" />
 
-      <motion.div
+      <div
         className="absolute top-[5%] left-0 w-full flex flex-col gap-1 items-center justify-center"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: false, amount: 0.3 }}
-        variants={fadeInUp}
+        
+        
+        
+        
       >
         <h2 className="text-black text-2xl md:text-6xl font-poppins-bold text-center">
           From the Learners
@@ -37,94 +37,92 @@ const Footer = () => {
         <h3 className="text-white mx-2.5 text-[0.6rem] md:text-[1.2rem] font-poppins text-center">
           Real feedback from hands-on sessions, live surgeries, and insightful discussions.
         </h3>
-      </motion.div>
+      </div>
 
       <div className="absolute top-[25%] md:top-[13%] left-0 w-full flex gap-5 items-center justify-center">
         {[comment1, comment2].map((img, i) => (
-          <motion.div
+          <div
             key={i}
             className="box w-[41vw] h-[15vh] md:h-[70vh] group transition duration-200 ease-in-out hover:scale-[1.03]"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: false, amount: 0.2 }}
-            variants={fadeInUp}
+            
+            
+            
+            
             custom={i * 0.2}
           >
             <img src={img} alt="" className="w-full h-full object-cover rounded" />
-          </motion.div>
+          </div>
         ))}
 
         {/* Contact Us Section */}
-        <motion.div
+        <div
           className="absolute top-[135%] md:top-[105%] left-0 w-full flex flex-col items-center justify-center"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: false, amount: 0.3 }}
-          variants={fadeInUp}
-          custom={0.5}
+          
+          
+          
+          
+          
         >
           <h2 className="text-white text-[1rem] md:text-6xl font-poppins-bold text-center">Contact us</h2>
           <h3 className="text-white mx-2.5 text-[0.6rem] md:text-[1.5rem] font-poppins text-center">
             Neuron Brain & Spine Centre, Gomti Nagar, Lucknow
           </h3>
-        </motion.div>
+        </div>
 
         <div className="absolute top-[180%] md:top-[118%] md:mt-7 left-0 w-full flex   gap-2  h-[115%] md:h-[80%] items-center justify-center">
           <div className="1b w-[65vw] flex flex-col gap-2 md:gap-4 justify-center h-[18vh] ">
             <div className='flex gap-3 pl-2 ' >
               <div className="ic w-28 h-7 md:h-20 md:w-[20vw]">
-               <motion.img src={location}  initial="hidden"
-                whileInView="visible"
-                viewport={{ once: false, amount: 0.3 }}
-                variants={fadeInUp}
-                custom={0.5}
-                whileHover={{ scale: 1.05 }}  alt="" className='w-full h-full object-contain' />
+               <img src={location}  
+                
+                
+                
+                
+                 alt="" className='w-full h-full object-contain' />
               </div>
-              <motion.h2 className='text-[0.5rem] text-white font-poppins md:text-2xl '
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: false, amount: 0.3 }}
-                variants={fadeInUp}
-                custom={0.5}
-                whileHover={{ scale: 1.05 }}
+              <h2 className='text-[0.5rem] text-white font-poppins md:text-2xl '
+                
+                
+                
+                
+                
+                
               >2, #B, 1, Vibhuti Khand, Gomti Nagar, Lucknow, Uttar Pradesh 226010,
                 Lucknow, Uttar Pradesh 2260102, #B, 1, Vibhuti Khand, Gomti Nagar,
-                Lucknow, Uttar Pradesh 226010, Lucknow, Uttar Pradesh 226010</motion.h2>
+                Lucknow, Uttar Pradesh 226010, Lucknow, Uttar Pradesh 226010</h2>
             </div>
 
 
             <div className='flex gap-2  text-center ' >
               <div className="ic w-10 h-7 md:h-20 md:w-[7.5vw] ">
-                <motion.img src={mail}  initial="hidden"
-                whileInView="visible"
-                viewport={{ once: false, amount: 0.3 }}
-                variants={fadeInUp}
-                custom={0.5}
-                whileHover={{ scale: 1.05 }}  alt="" className='w-full h-full object-contain' />
+                <img src={mail}  
+                
+                
+                
+                
+                  alt="" className='w-full h-full object-contain' />
               </div>
-              <motion.h2 className='text-[1rem] text-white font-poppins my-auto md:text-2xl '  initial="hidden"
-                whileInView="visible"
-                viewport={{ once: false, amount: 0.3 }}
-                variants={fadeInUp}
-                custom={0.5}
-                whileHover={{ scale: 1.05 }}>Info@neuronspine.in</motion.h2>
+              <h2 className='text-[1rem] text-white font-poppins my-auto md:text-2xl '  
+                
+                
+                
+                
+                >Info@neuronspine.in</h2>
             </div>
 
             <div className='flex gap-1 text-center ' >
               <div className="ic w-10 h-7 md:h-20 md:w-[7.5vw]   ">
-                <motion.img src={call}  initial="hidden"
-                whileInView="visible"
-                viewport={{ once: false, amount: 0.3 }}
-                variants={fadeInUp}
-                custom={0.5}
-                whileHover={{ scale: 1.05 }}  alt="" className='w-full h-full object-contain' />
+                <img src={call}  
+                
+                
+                
+                
+                  alt="" className='w-full h-full object-contain' />
               </div>
-              <motion.h2 className='text-[1rem] text-white font-poppins my-auto md:text-2xl '  initial="hidden"
-                whileInView="visible"
-                viewport={{ once: false, amount: 0.3 }}
-                variants={fadeInUp}
-                custom={0.5}
-                whileHover={{ scale: 1.05 }}>7080106535 | 0522-4248041</motion.h2>
+              <h2 className='text-[0.8rem] text-white font-poppins my-auto md:text-2xl '  
+                
+               
+                >7080106535 | 0522-4248041</h2>
             </div>
 
           </div>
@@ -133,20 +131,20 @@ const Footer = () => {
             <h2 className='text-[0.7rem] md:text-3xl font-poppins text-white mt-12'>Follow us On</h2>
 
             <div className="icons pt-2 flex  gap-2">
-              <motion.img src={fb} alt="facebook" initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: 'easeOut' }}
-                whileHover={{ scale: 1.1 }} className='w-[8vw] md:h-[8vh] md:w-[3.8vw]' />
+              <img src={fb} alt="facebook"
+                
+                
+                 className='w-[8vw] md:h-[8vh] md:w-[3.8vw]' />
 
 
-              <motion.img src={insta} alt="facebook" initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: 'easeOut' }}
-                whileHover={{ scale: 1.1 }} className='w-[8vw] md:h-[8vh] md:w-[3.8vw]' />
-              <motion.img src={yt} alt="facebook" initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: 'easeOut' }}
-                whileHover={{ scale: 1.1 }} className='w-[8vw] md:h-[8vh] md:w-[3.8vw]' />
+              <img src={insta} alt="facebook"
+                
+                
+                 className='w-[8vw] md:h-[8vh] md:w-[3.8vw]' />
+              <img src={yt} alt="facebook" 
+                
+                
+                 className='w-[8vw] md:h-[8vh] md:w-[3.8vw]' />
             </div>
           </div>
 

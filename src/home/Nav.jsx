@@ -43,7 +43,7 @@ const Nav = () => {
         <div className="md:hidden flex flex-col items-center px-4 pt-2 pb-4 space-y-2 bg-white shadow">
           <a href="/" className="block text-gray-700 hover:text-blue-500">Home</a>
           <a href="/about" className="block text-gray-700 hover:text-blue-500">About</a>
-          <a href="/services" className="block text-gray-700 hover:text-blue-500">Services</a>
+          <a href="/workshop" className="block text-gray-700 hover:text-blue-500">Workshop</a>
           <a href="/contact" className="block text-gray-700 hover:text-blue-500">Contact</a>
         </div>
       )}

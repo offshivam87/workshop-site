@@ -1,5 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import ESS from '../ESS.png'
+import PLACE from '../place.png'
 
 const SecSection = () => {
   return (
@@ -42,7 +44,7 @@ const SecSection = () => {
             whileHover={{ scale: 1.03, y: -4, transition: { duration: 0.25 } }}
           >
             <img
-              src="https://images.pexels.com/photos/30798553/pexels-photo-30798553.jpeg"
+              src={ESS}
               alt=""
               className='w-full h-full rounded-2xl object-cover'
             />
@@ -60,7 +62,7 @@ const SecSection = () => {
             whileHover={{ scale: 1.03, y: -4, transition: { duration: 0.25 } }}
           >
             <img
-              src="https://images.pexels.com/photos/30798553/pexels-photo-30798553.jpeg"
+              src={PLACE}
               alt=""
               className='w-full h-full rounded-2xl object-cover'
             />
