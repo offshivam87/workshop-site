@@ -1,48 +1,86 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import graph from '../main photos/graph.png'
 
+const fadeUp = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
+}
+
 const Secthree = () => {
-    return (
-        <div className='mt-'>
-            <h2 className='text-[1.1rem] mt-27 md:mt-[40rem] md:text-5xl font-black md:pt-7 text-center text-black my-3 font-poppins'>What is Endoscopic Spine Surgery?</h2>
-            <p className='text-[0.8rem] px-5 md:text-2xl md:px-15 font-poppins my-2 text-center'>Endoscopic spine surgery is a minimally invasive technique using a small camera-equipped tube to access the spine through a tiny incision, causing minimal tissue disruption.It offers faster recovery and less pain compared to traditional open surgery.
+  return (
+    <div className='mt-'>
+      {/* Heading */}
+      <motion.h2
+        className='text-[1.1rem] mt-27 md:mt-[40rem] md:text-5xl font-black md:pt-7 text-center text-black my-3 font-poppins'
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.3 }}
+      >
+        What is Endoscopic Spine Surgery?
+      </motion.h2>
 
-            </p>
+      {/* Paragraph */}
+      <motion.p
+        className='text-[0.8rem] px-5 md:text-2xl md:px-15 font-poppins my-2 text-center'
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.3 }}
+      >
+        Endoscopic spine surgery is a minimally invasive technique using a small camera-equipped tube to access the spine through a tiny incision, causing minimal tissue disruption. It offers faster recovery and less pain compared to traditional open surgery.
+      </motion.p>
 
-            <div className="img w-[89vw] h-[20vh] md:h-[85vh] my-3 mx-auto ">
-                <img src={graph} alt="" className='w-full h-full object-cover'  />
-            </div>
+      {/* Image */}
+      <motion.div
+        className="img w-[89vw] h-[20vh] md:h-[85vh] my-3 mx-auto"
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.3 }}
+      >
+        <img src={graph} alt="" className='w-full h-full object-cover' />
+      </motion.div>
 
-            <div className="why">
-                <h2 className='text-2xl font-poppins-bold md:text-5xl md:my-10 text-center font-black'>Why Dr. Achal Gupta?</h2>
+      {/* Why Section */}
+      <motion.div
+        className="why"
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.3 }}
+      >
+        <h2 className='text-2xl font-poppins-bold md:text-5xl md:my-10 text-center font-black'>
+          Why Dr. Achal Gupta?
+        </h2>
 
-                <div className='w-full h-[18vh] md:h-[50vh] md:pl-[15rem] flex flex-col gap-2 '>
-                <ul className=" list-disc    font-poppins font-bold my-4 list-inside text-left">
-                    <li className="text-[0.7rem] md:mb-4 md:text-4xl mx-auto px-3 font-bold font-poppins">
-                        Top Notch Qualifications (India's Best Medical Institutes)
-                    </li>
-                    <li className="text-[0.7rem] md:mb-4 md:text-4xl md:mx-auto px-3">
-                        Years of Expertise in Brain and Spine Surgeries
-                    </li>
-                    <li className="text-[0.7rem] md:mb-4 md:text-4xl md:mx-auto px-3">
-                        1000+ Successful Endoscopic Spine Surgeries
-                    </li>
-                    <li className="text-[0.7rem] md:mb-4 md:text-4xl md:mx-auto px-3">
-                        Advanced Minimally Invasive Techniques
-                    </li>
-
-                    <li className="text-[0.7rem] md:mb-4 md:text-4xl md:mx-auto px-3">
-                        National and International Awards+Research Papers
-                    </li>
-                    <li className="text-[0.7rem] md:mb-4 md:text-4xl md:mx-auto px-3">
-                        Trusted by Hundreds of Patient Accross India
-                    </li>
-                </ul>
-                </div>
-            </div>
-
+        <div className='w-full h-[18vh] md:h-[50vh] md:pl-[15rem] flex flex-col gap-2'>
+          <ul className="list-disc font-poppins font-bold my-4 list-inside text-left">
+            {[
+              "Top Notch Qualifications (India's Best Medical Institutes)",
+              "Years of Expertise in Brain and Spine Surgeries",
+              "1000+ Successful Endoscopic Spine Surgeries",
+              "Advanced Minimally Invasive Techniques",
+              "National and International Awards+Research Papers",
+              "Trusted by Hundreds of Patient Accross India"
+            ].map((text, index) => (
+              <motion.li
+                key={index}
+                className="text-[0.7rem] md:mb-4 md:text-4xl md:mx-auto px-3"
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, amount: 0.3 }}
+              >
+                {text}
+              </motion.li>
+            ))}
+          </ul>
         </div>
-    )
+      </motion.div>
+    </div>
+  )
 }
 
 export default Secthree

@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import calender from '../cal.png';
 import location from '../loc.png';
 
+
 const Cal = () => {
   return (
     <div className='bg-gradient-to-r from-[#72D2E0] to-[#7181E0] w-full md:h-[25vh] h-[13vh] flex justify-center items-center gap-6'>
