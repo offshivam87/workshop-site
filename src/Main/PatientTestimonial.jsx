@@ -7,7 +7,7 @@ const PatientTestimonial = () => {
   return (
     <div className='overflow-y-hidden'>
       <h2 className='text-2xl font-poppins-bold pt-8 md:text-6xl md:pb-7  bg-gradient-to-r from-[#72D2E0] to-[#7181E0] text-center'>
-        Patient's Testimonial
+        Doctor's Testimonial
       </h2>
 
       <div className="gra w-full md:h-[50vh] h-[20vh] md:pb-15 gap-3 flex justify-center md:flex-row items-center pt-3.5 bg-gradient-to-r from-[#72D2E0] to-[#7181E0]">

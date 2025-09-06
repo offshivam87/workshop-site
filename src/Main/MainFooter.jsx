@@ -19,13 +19,13 @@ const MainFooter = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3, ease: "easeOut" }}
           viewport={{ once: false, amount: 0.3 }} className="absolute top-[5%] md:text-5xl md:top-[3%] w-full text-center text-[1.3rem] font-poppins-bold text-white">
-          Hear from happy patients
+          Hear from happy delegates
         </motion.h2>
         <motion.h2 initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }} 
           viewport={{ once: false, amount: 0.3 }} className="absolute  top-[10%] md:text-2xl md:top-[6.5%] w-full text-center text-[0.7rem] font-poppins text-white">
-          Real stories from our patients
+          Real stories from our workshop attendees
         </motion.h2>
 
         <div className="boxes absolute  md:mt-20 flex justify-center items-center gap-2 md:gap-8 top-[15%] md:top-[10%] left-[3%] md:left-[10%]">
