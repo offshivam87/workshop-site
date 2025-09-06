@@ -40,7 +40,7 @@ const images = [one, two, three, four, five, six, seven, eight, nine, ten, eleve
 
 const Linephotos = () => {
     return (
-        <div className="relative my-4 w-full flex justify-center items-center h-[18vh] md:h-[40vh] px-3.5">
+        <div className="relative my-4 w-full flex overflow-y-hidden justify-center items-center h-[18vh] md:h-[40vh] px-3.5">
 
             {/* Left blur */}
             <div className="absolute inset-y-[-10%] left-0 w-40 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>

@@ -7,7 +7,7 @@ const Partners = () => {
 
   
   return (
-    <div>
+    <div className='overflow-y-hidden'>
       <motion.h2
         className='text-center text-2xl md:text-5xl my-10 font-poppins-extraBold'
        

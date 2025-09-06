@@ -10,14 +10,16 @@ import ImageSlider from '../home/ImageSlider'
 
 const Main = () => {
   return (
-     <div>
+     <div className='overflow-y-hidden overflow-x-hidden'>
         <Secone/>
         <Sectwo/>
         <Secthree/>
         <PatientTestimonial/>
         <ImageSlider/>
         <NewsMedia/>
+        
         <MainFooter/>
+        
 
       
     </div>

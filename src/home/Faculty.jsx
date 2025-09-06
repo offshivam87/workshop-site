@@ -21,7 +21,7 @@ const Faculty = () => {
   };
 
   return (
-    <div className='flex flex-col items-center' ref={ref}>
+    <div className='flex flex-col overflow-y-hidden items-center' ref={ref}>
       
       {/* Heading with view-triggered animation */}
       <motion.h2

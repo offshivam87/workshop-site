@@ -35,7 +35,7 @@ const RegistrationBanner = () => {
       variants={fadeUp}
       initial="hidden"
       animate={controls}
-      className="flex items-center justify-center md:h-[45vh] h-[30vh] p-5"
+      className="flex items-center overflow-y-hidden justify-center md:h-[45vh] h-[30vh] p-5"
     >
       <div className="relative w-[90vw] md:w-[90vw] bg-gradient-to-br from-blue-900 to-[#000F44] rounded-3xl p-3 text-center overflow-hidden shadow-2xl">
         {/* Floating background effect */}

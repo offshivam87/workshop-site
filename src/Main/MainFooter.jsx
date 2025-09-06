@@ -11,7 +11,7 @@ import { motion } from 'framer-motion'
 
 const MainFooter = () => {
   return (
-    <div>
+    <div className='overflow-y-hidden overflow-x-hidden'>
       <div className="img w-full h-[85vh] md:h-[99rem] relative">
         <img src={bottom} alt="" className='w-full h-full object-fill' />
 
@@ -23,39 +23,42 @@ const MainFooter = () => {
         </motion.h2>
         <motion.h2 initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
-          viewport={{ once: false, amount: 0.3 }} className="absolute top-[10%] md:text-2xl md:top-[6.5%] w-full text-center text-[0.7rem] font-poppins text-white">
+          transition={{ duration: 0.5, ease: "easeOut" }} 
+          viewport={{ once: false, amount: 0.3 }} className="absolute  top-[10%] md:text-2xl md:top-[6.5%] w-full text-center text-[0.7rem] font-poppins text-white">
           Real stories from our patients
         </motion.h2>
 
-        <div className="boxes absolute flex flex-wrap  gap-3 md:gap-8 top-[15%] md:top-[10%] left-[3%] md:left-[10%]">
+        <div className="boxes absolute  md:mt-20 flex justify-center items-center gap-2 md:gap-8 top-[15%] md:top-[10%] left-[3%] md:left-[10%]">
           <motion.div
-            className="bluebox w-[45vw] h-[40vh] md:w-[38vw] md:h-[120vh] rounded overflow-hidden"
+            className="bluebox w-[30vw] h-[28vh] bg-blue-900 md:w-[25vw] md:h-[90vh] rounded overflow-hidden"
+            initial={{ opacity: 0, x: -100 }} // left se start
+            whileInView ={{ opacity: 1, x: 0 }} // final position
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.2 }} // jitni baar view me aaye utni baar chale
+          >
+            
+          </motion.div>
+
+          <div
+            className="bluebox w-[30vw] bg-blue-900 h-[28vh] md:w-[25vw] md:h-[90vh] rounded overflow-hidden"
             initial={{ opacity: 0, x: -100 }} // left se start
             whileInView={{ opacity: 1, x: 0 }} // final position
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: false, amount: 0.2 }} // jitni baar view me aaye utni baar chale
           >
-            <iframe
-              src="https://www.youtube.com/embed/9irbeAkzPZg"
-              className="w-full rounded-2xl h-full"
-              allowFullScreen
-            ></iframe>
-          </motion.div>
+            
+          </div>
 
           <motion.div
-  className="bluebox w-[45vw] h-[40vh] md:w-[38vw] md:h-[120vh] rounded overflow-hidden"
-  initial={{ opacity: 0, x: 100 }} // left se start
-  whileInView={{ opacity: 1, x: 0 }} // final position
-  transition={{ duration: 0.8, ease: "easeOut" }}
-  viewport={{ once: false, amount: 0.2 }} // jitni baar view me aaye utni baar chale
->
-  <iframe
-    src="https://www.youtube.com/embed/odsBly8BIoA?autoplay=0"
-    className="w-full rounded-2xl h-full"
-    allowFullScreen
-  ></iframe>
-</motion.div>
+            className="bluebox w-[30vw] bg-blue-900 h-[28vh] md:w-[25vw] md:h-[90vh] rounded overflow-hidden"
+            initial={{ opacity: 0, x: 100 }} // left se start
+            whileInView={{ opacity: 1, x: 0 }} // final position
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.2 }} // jitni baar view me aaye utni baar chale
+          >
+            
+          </motion.div>
+
         </div>
 
 
@@ -67,7 +70,7 @@ const MainFooter = () => {
         <motion.h2 initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
-          viewport={{ once: false, amount: 0.3 }}className='text-[0.7rem] md:text-3xl font-poppins text-white md:left-[22%] md:top-[75%]  text-center absolute top-[75%] left-[9%]'>Neuron Brain & Spine Centre, Gomti Nagar, Lucknow</motion.h2>
+          viewport={{ once: false, amount: 0.3 }} className='text-[0.7rem] md:text-3xl font-poppins text-white md:left-[22%] md:top-[75%]  text-center absolute top-[75%] left-[9%]'>Neuron Brain & Spine Centre, Gomti Nagar, Lucknow</motion.h2>
 
 
 

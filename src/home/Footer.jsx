@@ -21,7 +21,7 @@ const fadeInUp = {
 
 const Footer = () => {
   return (
-    <div className="relative w-full h-[60vh] md:h-[70rem]">
+    <div className="relative w-full  overflow-y-hidden ">
       <img src={footer} alt="footer" className="w-full h-full object-fill" />
 
       <div
@@ -56,7 +56,7 @@ const Footer = () => {
 
         {/* Contact Us Section */}
         <div
-          className="absolute top-[135%] md:top-[105%] left-0 w-full flex flex-col items-center justify-center"
+          className="absolute mt-40 md:top-[105%] left-0 w-full flex flex-col items-center justify-center"
           
           
           

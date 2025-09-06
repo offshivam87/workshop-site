@@ -1,4 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
+import sbg from '../main photos/sbg.png'
+
 import badge from '../main photos/badge.png'
 import invertedbadge from '../main photos/badge invert.png'
 import doc from '../main photos/doc.png'
@@ -15,162 +17,75 @@ import { motion } from "framer-motion";
 
 import drimg from '../main photos/drimg.png'
 
-
-
 const Sectwo = () => {
-    const [isHovered, setIsHovered] = useState(false);
-    const [isDoc, setDoc] = useState(false);
-    const [isSpine, setSpine] = useState(false);
-    const [isBrain, setBrain] = useState(false);
-    const [isDna, setDna] = useState(false);
-    const [isKnife, setKnife] = useState(false);
-
+    const cards = [
+        { id: 1, icon: badge, hoverIcon: invertedbadge, text: "1st Rank in Haryana PMT" },
+        { id: 2, icon: doc, hoverIcon: invertdoc, text: "MBBS from PGIMS Rohtak" },
+        { id: 3, icon: spine, hoverIcon: invertspine, text: "Fellowship in Spine Surgery (NSSA)" },
+        { id: 4, icon: dna, hoverIcon: invertdna, text: "DrNB Neurosurgery from LilavatíHospital, Mumbai" },
+        { id: 5, icon: knife, hoverIcon: invertknife, text: "University Research Fellow in Genetics & Molecular Medicine" },
+        { id: 6, icon: brain, hoverIcon: invertbrain, text: "Hand-picked to lead critical surgeries." },
+    ];
     return (
-        <div>
-            <div className="blue w-full  bg-[#000F44] md:rounded-t-sm  relative">
-                <p className='text-[0.6rem] text-white md:text-[1.2rem]  md:pb-10 mx-auto font-poppins text-center'>
-                    known for pioneering minimally invasive techniques that reduce <br />
-                    recovery time and improve outcomes. <br />
-                    With expertise in both neurosurgery and endoscopic spine procedures,
-                    <br />
-                    he has become a trusted name across India, combining precision <br />
-                    with compassionate patient care.
-                </p>
+        <div className='overflow-x-hidden'>
+            <div className="w-full h-[90vh]  md:h-[205vh] "
+                style={{
+                    backgroundImage: `url(${sbg})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                }}
+            >
+                <div className=" w-full md:gap-15  gap-3 flex flex-col items-center pt-4  ">
+                    <h2 className='font-poppins-bold text-center mt-3.5 md:mt-12 md:text-6xl text-white text-2xl'>Academic Brilliance</h2>
+                    <div className="cards w-full md:h-[40vh] md:mt-10 flex flex-wrap md:flex-nowrap justify-center gap-3 h-auto mt-5 ">
+                        {cards.map((card, index) => (
+                            <div key={card.id} className="card w-[28vw] md:w-[14vw] md:h-[38vh] px-0.5 flex rounded md:rounded-2xl flex-col items-center h-[15vh] bg-white">
 
-                <motion.div
-                    className="h2 text-white md:text-5xl text-center font-poppins-bold my-6 text-2xl"
-                    initial={{ opacity: 0, y: 50, letterSpacing: "0.1em" }}
-                    animate={{ opacity: 1, y: 0, letterSpacing: "0em" }}
-                    transition={{ duration: 1, ease: "easeOut" }}
-                    whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
-                    whileInView={{ opacity: 1, x: 0, }}
-                    viewport={{ once: true, amount: 0.8 }}
-                >
-                    Academic Brilliance
-                </motion.div>
 
-                <div>
+                                <div className="icon my-2 md:w-20 md:h-25 w-12 h-13">
+                                    <img
+                                        src={card.icon}
+                                        alt="icon"
+                                        className="w-full h-full object-cover hover:hidden"
+                                    />
 
-                    <div className="cards w-[85vw] flex flex-col items-center md:flex-row md:justify-center md:gap-10 mx-auto my-3 ">
-                        <div className="box w-[65vw] md:w-[25vw] md:h-[55vh] transition-all duration-300 ease-out hover:scale-105 hover:shadow-2xl hover:-translate-y-2  rounded-2xl flex gap-3 md:gap-5 flex-col items-center my-3.5 h-[40vh] bg-white"
-                            onMouseEnter={() => setIsHovered(true)}
-                            onMouseLeave={() => setIsHovered(false)}
+                                    <img
+                                        src={card.hoverIcon}
+                                        alt="hover icon"
+                                        className="w-full h-full object-cover hidden hover:block"
+                                    />
+                                </div>
+                                <h2 className='text-[0.5rem] md:text-[1.3rem] md:px-3 font-poppins-bold text-center'>{card.text}</h2>
 
-                        >
-                            <div
-                                className="img w-[28vw] md:w-[10vw] md:h-[26vh]  mt-5 h-[18vh]   bg-no-repeat bg-center bg-cover"
-                                style={{
-                                    backgroundImage: `url(${isHovered ? invertedbadge : badge})`
-                                }}
-
-                            >
                             </div>
-                            <h2 className='text-2xl text-center  font-poppins-bold text-black'>1st Rank in <br /> Haryana PMT </h2>
-                        </div>
+                        ))}
 
 
-                        <div className="box w-[65vw] md:w-[25vw] md:h-[55vh] transition-all duration-300 ease-out hover:scale-105 hover:shadow-2xl hover:-translate-y-2  rounded-2xl flex gap-3 md:gap-5 flex-col items-center my-3.5 h-[40vh] bg-white"
-                            onMouseEnter={() => setDoc(true)}
-                            onMouseLeave={() => setDoc(false)}
-
-                        >
-                            <div
-                                className="img w-[28vw] md:w-[10vw] md:h-[25vh] mt-5 h-[18vh] bg-no-repeat bg-center bg-cover transition-all duration-300"
-                                style={{
-                                    backgroundImage: `url(${isDoc ? invertdoc : doc})`
-                                }}
-
-                            >
-                            </div>
-                            <h2 className='text-2xl text-center font-poppins-bold text-black'>MBBS from  <br /> PGIMS Rohtak</h2>
-                        </div>
 
 
-                        <div className="box w-[65vw] md:w-[25vw] md:h-[55vh] transition-all duration-300 ease-out hover:scale-105 hover:shadow-2xl hover:-translate-y-2  rounded-2xl flex gap-3 md:gap-5 flex-col items-center my-3.5 h-[40vh] bg-white"
-                            onMouseEnter={() => setSpine(true)}
-                            onMouseLeave={() => setSpine(false)}
-
-                        >
-                            <div
-                                className="img w-[30vw] md:w-[12vw] md:h-[25vh] mt-5 h-[18vh] bg-no-repeat bg-center bg-cover transition-all duration-300"
-                                style={{
-                                    backgroundImage: `url(${isSpine ? invertspine : spine})`
-                                }}
-
-                            >
-                            </div>
-                            <h2 className='text-2xl text-center font-poppins-bold text-black'>Fellowship in <br /> Spine Surgery (NSSA)</h2>
-                        </div>
                     </div>
+                    <h2 className='font-poppins-bold text-center mt-9 md:mt-12 md:text-6xl text-white text-[1.6rem]'>Why Dr.Achal Gupta ?</h2>
+                    <p className='text-[0.7rem] md:text-4xl font-poppins  text-white text-center'> •Top-Notch Qualifications (India's Best Medical Institutes) <br />
+                        •Years of Expertise in Brain & Spine Surgeries <br />
+                        •1000+ Successful Endoscopic Spine Surgeries <br />
+                        •Advanced Minimally Invasive Techniques<br />
+                        •National & International Awards + Research Papers<br />
+                        •Trusted by Hundreds of Patients Across India</p>
 
-                    <div className="cards w-[85vw] flex flex-col items-center md:flex-row md:justify-center md:gap-10 mx-auto my-3 ">
+                        <h2 className='font-poppins-bold text-center  md:mt-1 md:text-6xl text-white text-[1.1rem]'>Pioneer in Endoscopic Spine Surgery</h2>
 
-
-                        <div className="box w-[65vw] md:w-[25vw] md:h-[55vh] transition-all duration-300 ease-out hover:scale-105 hover:shadow-2xl hover:-translate-y-2  rounded-2xl flex gap-3 md:gap-5 flex-col items-center my-3.5 h-[40vh] bg-white"
-                            onMouseEnter={() => setBrain(true)}
-                            onMouseLeave={() => setBrain(false)}
-
-                        >
-                            <div
-                                className="img w-[28vw] md:w-[10vw] md:h-[25vh] mt-5 h-[18vh] bg-no-repeat bg-center bg-cover transition-all duration-300"
-                                style={{
-                                    backgroundImage: `url(${isBrain ? invertbrain : brain})`
-                                }}
-
-                            >
-                            </div>
-                            <h2 className='text-[1.5rem] text-center font-poppins-bold text-black'>DrNB Neurosurgery  <br />from Lilavati Hospital <br />Mumbai</h2>
+                        <div className='w-[75vw] h-[20vh] md:h-[70vh] absolute top-[175%] md:top-[412%] rounded '>
+                            <img src="https://ik.imagekit.io/885310/workshop/dr%20achal%20-%20endo-18.png" className='w-full h-full object-cover object-top rounded-3xl' alt="" />
                         </div>
 
 
-                        <div className="box w-[65vw] md:w-[25vw] md:h-[55vh] transition-all duration-300 ease-out hover:scale-105 hover:shadow-2xl hover:-translate-y-2  rounded-2xl flex gap-3 md:gap-5 flex-col items-center my-3.5 h-[40vh] bg-white"
-                            onMouseEnter={() => setDna(true)}
-                            onMouseLeave={() => setDna(false)}
-
-                        >
-                            <div
-                                className="img w-[28vw] md:w-[10vw] md:h-[25vh] mt-5 h-[18vh] bg-no-repeat bg-center bg-cover transition-all duration-300"
-                                style={{
-                                    backgroundImage: `url(${isDna ? invertdna : dna})`
-                                }}
-
-                            >
-                            </div>
-                            <h2 className='text-[1.5rem] text-center font-poppins-bold text-black'>University Research Fellow <br />in Genetics & Molecular Medicine</h2>
-                        </div>
 
 
-                        <div className="box w-[65vw] md:w-[25vw] md:h-[55vh] transition-all duration-300 ease-out hover:scale-105 hover:shadow-2xl hover:-translate-y-2  rounded-2xl flex gap-3 md:gap-5 flex-col items-center my-3.5 h-[40vh] bg-white"
-                            onMouseEnter={() => setKnife(true)}
-                            onMouseLeave={() => setKnife(false)}
-
-                        >
-                            <div
-                                className="img w-[30vw] md:w-[12vw] md:h-[25vh] mt-5 h-[18vh] bg-no-repeat bg-center bg-cover transition-all duration-300"
-                                style={{
-                                    backgroundImage: `url(${isKnife ? invertknife : knife})`
-                                }}
-
-                            >
-                            </div>
-                            <h2 className='text-[1.5rem] text-center font-poppins-bold text-black'>Hand-picked to<br /> lead critical surgeries. </h2>
-                        </div>
-                    </div>
                 </div>
 
-                <motion.h2
-                    className="text-[1.3rem] md:text-5xl mt-6 text-white text-center font-poppins-bold"
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, ease: "easeOut" }}
-                    viewport={{ once: true, amount: 0.8 }}
-                >Pioneer in Endoscopic Spine Surgery</motion.h2>
-                <div className="cl w-full h-[15vh]"></div>
-                <div className="shi w-full md:h-[98vh] my-3 absolute -bottom-[5%] md:top-[93%] rounded h-[25vh] mx-auto mt-3.5 mb-4 ">
-                    <img src={drimg} alt="" className='w-full rounded-2xl h-full  object-top object-cover' />
-                </div>
+
             </div>
-
 
 
         </div>

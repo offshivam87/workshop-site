@@ -4,7 +4,7 @@ import hotel from '../hotel.png';
 
 const Venue = () => {
   return (
-    <div className='w-full md:min-h-[60vh] flex justify-center pb-5'>
+    <div className='w-full md:min-h-[60vh] overflow-y-hidden flex justify-center pb-5'>
       <div className='w-[85vw] rounded-xl flex flex-col items-center gap-6'>
 
         {/* Title with entry animation */}

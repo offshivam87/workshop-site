@@ -4,7 +4,7 @@ import achal from '../achal.png';
 
 const FirstSection = () => {
   return (
-    <div className='bg-gradient-to-r from-[#72D2E0] to-[#7181E0] w-full '>
+    <div className='bg-gradient-to-r from-[#72D2E0] overflow-y-hidden  to-[#7181E0] w-full '>
       <div className="md:flex items-center md:pt-30 pt-20 justify-center">
         <div className="md:w-[85vw] h-[21.7vh] md:h-[80vh] md:mt-5 flex justify-center items-center">
           <div className="txt md:pl-8 pl-5 flex flex-col md:gap-8 gap-1 pt-2.5 justify-center items-start text-white text-left md:w-[40vw] w-[50vw] h-[20vh] md:h-[75vh]">

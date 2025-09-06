@@ -9,7 +9,7 @@ const fadeUp = {
 
 const Secthree = () => {
   return (
-    <div className='mt-'>
+    <div className='overflow-x-hidden overflow-y-hidden '>
       {/* Heading */}
       <motion.h2
         className='text-[1.1rem] mt-27 md:mt-[40rem] md:text-5xl font-black md:pt-7 text-center text-black my-3 font-poppins'

@@ -25,7 +25,7 @@ const Sec3 = () => {
   };
 
   return (
-    <div ref={ref} className='my-7'>
+    <div ref={ref} className='my-7 overflow-y-hidden'>
       <motion.div
         className='w-full md:h-auto h-auto bg-amber-500 overflow-hidden'
         variants={fadeUp}

@@ -15,7 +15,7 @@ import ImageSlider from './ImageSlider'
 
 const Home = () => {
   return (
-    <div>
+    <div className=''>
       <Nav/>
       <FirstSection/>
       <SecSection/>

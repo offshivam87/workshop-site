@@ -5,7 +5,7 @@ import Nav from './home/Nav'
 
 const App = () => {
   return (
-    <div className='overflow-x-hidden'>
+    <div className='overflow-x-hidden overflow-y-hidden'>
       <Nav/>
         <Mainroutes />
       

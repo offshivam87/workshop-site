@@ -8,7 +8,7 @@ const SecSection = () => {
     <div>
       {/* Top Section */}
       <motion.div
-        className='w-full bg-white md:h-[25vh] h-[10vh] flex justify-center'
+        className='w-full bg-white md:h-[25vh] h-[10vh] overflow-y-hidden flex justify-center'
       >
         <motion.div
           className='w-[70vw] md:h-[15vh] h-[5vh] md:pb-13 pb-10 md:rounded-b-2xl rounded-b shadow-[0_5px_30px_rgba(0,0,0,0.3)] bg-[#000F44] text-white text-center md:gap-2 flex flex-col items-center justify-center'

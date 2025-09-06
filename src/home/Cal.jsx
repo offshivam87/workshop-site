@@ -6,7 +6,7 @@ import location from '../loc.png';
 
 const Cal = () => {
   return (
-    <div className='bg-gradient-to-r from-[#72D2E0] to-[#7181E0] w-full md:h-[25vh] h-[13vh] flex justify-center items-center gap-6'>
+    <div className='bg-gradient-to-r overflow-hidden from-[#72D2E0] to-[#7181E0] w-full md:h-[25vh] h-[13vh] flex justify-center items-center gap-6'>
 
       {/* Calendar Box */}
       <motion.div

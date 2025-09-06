@@ -8,7 +8,7 @@ const Nav = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="bg-white fixed w-full md:h-[10vh] left-0 z-50 shadow-2xl ">
+    <nav className="bg-white rounded-4xl top-2 fixed left-1/2 -translate-x-1/2 mx-auto w-[90vw] md:h-[10vh]  z-50 shadow-2xl ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}

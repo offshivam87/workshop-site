@@ -20,3 +20,8 @@
     --font-poppins-bold:poppins-bold, "sans-serif";
     --font-poppins-extraBold:poppins-extraBold,"sans-serif"
 }
+
+body{
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
