@@ -36,7 +36,7 @@ const MainFooter = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: false, amount: 0.2 }} // jitni baar view me aaye utni baar chale
           >
-           <iframe className='w-full h-full object-fit  rounded-2xl' src="https://imagekit.io/player/embed/expansio/Endospine%2025/Testimonials/WhatsApp%20Video%202025-09-09%20at%2013.26.19_3884cf54.mp4?updatedAt=1757404652495&thumbnail=https%3A%2F%2Fik.imagekit.io%2Fexpansio%2FEndospine%252025%2FTestimonials%2FWhatsApp%2520Video%25202025-09-09%2520at%252013.26.19_3884cf54.mp4%2Fik-thumbnail.jpg%3FupdatedAt%3D1757404652495&updatedAt=1757404652495" title="ImageKit video player" frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"> </iframe>
+           <iframe className='w-full h-full object-fit  rounded-2xl' src="https://imagekit.io/player/embed/expansio/Endospine%2025/Testimonials/WhatsApp%20Video%202025-09-09%20at%2013.26.19_3884cf54.mp4?updatedAt=1757404652495&thumbnail=https%3A%2F%2Fik.imagekit.io%2Fexpansio%2FEndospine%252025%2FTestimonials%2FWhatsApp%2520Video%25202025-09-09%2520at%252013.26.19_3884cf54.mp4%2Fik-thumbnail.jpg%3FupdatedAt%3D1757404652495&updatedAt=1757404652495" muted title="ImageKit video player" frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"> </iframe>
 
           </motion.div>
 
@@ -81,7 +81,7 @@ const MainFooter = () => {
         <div className="absolute top-[79%] md:top-[78%] md:mt-7 left-0 w-full flex   gap-2  h-[20%] md:h-[20%] items-center justify-center">
           <div className="1b w-[65vw] flex flex-col gap-1 md:gap-4 justify-center h-[18vh] ">
            <a target='_blanck' href="mailto:info@neuronspine.in?subject=Inquiry&body=Hello, I want to know more about your services."> <div className='flex gap-2  text-center ' >
-              <div className="ic w-10 h-7 md:h-20 md:w-[7.5vw] ">
+              <div className="ic ml-1 w-15 h-7 md:h-20 md:w-[7.5vw] ">
                 <img src={location}
 
 
@@ -89,13 +89,14 @@ const MainFooter = () => {
 
                   alt="" className='w-full h-full object-contain' />
               </div>
-              <h2 className='text-[0.3rem] text-white font-poppins my-auto md:text-[1.1rem] '
+              <h2 className='text-[0.6rem] text-white font-poppins my-auto md:text-[1.1rem] '
 
 
 
 
-              >2, #B, 1, Vibhuti Khand, Gomti Nagar, Lucknow, Uttar Pradesh 226010,
-                Lucknow, Uttar Pradesh 2260102</h2>
+              >#B, 1, Vibhuti Khand, Gomti Nagar, Lucknow, Uttar Pradesh 226010,
+                Lucknow, Uttar Pradesh 226010</h2>
+
             </div>
             </a>
 
@@ -131,7 +132,15 @@ const MainFooter = () => {
                 <h2 className='text-[0.7rem] text-white font-poppins my-auto md:text-[1.1rem]'
 
 
-                >+91 95598 82889 | +91 90048 58393</h2>
+                >+91 95598 82889 | <br />
+                Himanshu 
+                </h2>
+                <h2 className='text-[0.7rem] text-white font-poppins my-auto md:text-[1.1rem]'
+
+
+                >+91 90048 58393 <br />
+                Dr Achal
+                </h2>
               </div></a>
 
           </div>
