@@ -8,15 +8,17 @@ import Footer from '../home/Footer'
 import MainFooter from '../Main/MainFooter'
 import ImageSlider from '../home/ImageSlider'
 
+
 const Main = () => {
   return (
      <div className='overflow-y-hidden overflow-x-hidden'>
         <Secone/>
-        <Sectwo/>
+        {/* <Sectwo/> */}
         <Secthree/>
         <PatientTestimonial/>
         <ImageSlider/>
         <NewsMedia/>
+        
         
         <MainFooter/>
         

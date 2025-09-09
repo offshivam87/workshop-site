@@ -51,6 +51,7 @@ const Slider = () => {
   };
 
   return (
+  
     <div className="overflow-y-hidden">
       <h2 className="text-2xl md:text-5xl my-15 font-poppins-bold text-center">Previous Workshops</h2>
       <div className="relative w-[85vw] mx-auto my-3.5 h-[30vh] md:h-[80vh] rounded-2xl overflow-hidden flex items-center justify-center bg-black">

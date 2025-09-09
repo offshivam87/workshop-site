@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from '../logo1.png';
+import logo from '../nlogo.png';
 import { Menu, X } from "lucide-react";
 import { NavLink } from "react-router-dom";
 
@@ -8,11 +8,11 @@ const Nav = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="bg-white rounded-4xl top-2 fixed left-1/2 -translate-x-1/2 mx-auto w-[90vw] md:h-[10vh]  z-50 shadow-2xl ">
+    <nav className="bg-white rounded-[3rem] top-2 fixed left-1/2 -translate-x-1/2 mx-auto w-[90vw] md:h-[10vh]  z-50 shadow-2xl ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="md:w-[26vw] md:h-18 w-[30vw]">
+          <div className="md:w-[15vw] md:h-15 w-[30vw]">
             <img src={logo} className="object-cover w-full h-full" alt="Logo" />
           </div>
 
@@ -22,7 +22,7 @@ const Nav = () => {
             <NavLink to="/" className="font-poppins hover:text-blue-500 font-bold">Home</NavLink>
             <NavLink to="/about" className="font-poppins  hover:text-blue-500 font-bold">About</NavLink>
             <NavLink to="/workshop" className="font-poppins  hover:text-blue-500 font-bold">Workshop</NavLink>
-            <NavLink to="/contact" className="text-white bg-[#000F44] px-4 py-2 rounded hover:bg-blue-700 font-poppins  transition">
+            <NavLink to="/contact" className="text-white bg-[#000F44] px-8 py-2 rounded-4xl hover:bg-blue-700 font-poppins  transition">
               Register
             </NavLink>
           </div>
