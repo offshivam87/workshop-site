@@ -24,7 +24,33 @@ const Secone = () => {
     "https://ik.imagekit.io/885310/ehighlights/RGF_6264.JPG",
     "https://ik.imagekit.io/885310/ehighlights/RGF_6287.JPG",
     "https://ik.imagekit.io/885310/ehighlights/RGF_6305.JPG",
-    "https://ik.imagekit.io/885310/ehighlights/RGF_6302.JPG"
+    "https://ik.imagekit.io/885310/ehighlights/RGF_6302.JPG",
+    "https://ik.imagekit.io/885310/ehighlights/DSC_7758.JPG?updatedAt=1757440749227",
+    "https://ik.imagekit.io/885310/ehighlights/DSC_7716.JPG?updatedAt=1757440722163",
+    "https://ik.imagekit.io/885310/ehighlights/DSC_7596.JPG?updatedAt=1757440667184",
+    "https://ik.imagekit.io/885310/ehighlights/DSC_7750.JPG?updatedAt=1757440647934",
+    "https://ik.imagekit.io/885310/ehighlights/DSC_7681.JPG?updatedAt=1757440612316",
+    "https://ik.imagekit.io/885310/ehighlights/RGF_6265.JPG?updatedAt=1757440562706",
+    "https://ik.imagekit.io/885310/ehighlights/RGF_6264.JPG?updatedAt=1757151846531",
+    "https://ik.imagekit.io/885310/ehighlights/RGF_6260.JPG?updatedAt=1757440529227",
+    "https://ik.imagekit.io/885310/ehighlights/RGF_6144.JPG?updatedAt=1757151845666",
+    "https://ik.imagekit.io/885310/ehighlights/RGF_6138.JPG?updatedAt=1757440462296",
+    
+    "https://ik.imagekit.io/885310/ehighlights/RGF_6127.JPG?updatedAt=1757151844562",
+    "https://ik.imagekit.io/885310/ehighlights/RGF_6135.JPG?updatedAt=1757440462112",
+    "https://ik.imagekit.io/885310/ehighlights/RGF_5969.JPG?updatedAt=1757151840918",
+    "https://ik.imagekit.io/885310/ehighlights/RGF_5959.JPG?updatedAt=1757151840687",
+    "https://ik.imagekit.io/885310/ehighlights/RGF_6496.JPG?updatedAt=1757440359088",
+    "https://ik.imagekit.io/885310/ehighlights/RGF_6491.JPG?updatedAt=1757440379289",
+    "https://ik.imagekit.io/885310/ehighlights/RGF_5946.JPG?updatedAt=1757151839006",
+    "https://ik.imagekit.io/885310/ehighlights/RGF_6472.JPG?updatedAt=1757151834395",
+    "https://ik.imagekit.io/885310/ehighlights/RGF_6433.JPG?updatedAt=1757440499732",
+    "https://ik.imagekit.io/885310/ehighlights/RGF_6308.JPG?updatedAt=1757440398671",
+    "https://ik.imagekit.io/885310/ehighlights/RGF_6302.JPG?updatedAt=1757440410646",
+    "https://ik.imagekit.io/885310/ehighlights/RGF_6285.JPG?updatedAt=1757440483604",
+    "https://ik.imagekit.io/885310/ehighlights/RGF_6287.JPG?updatedAt=1757440579582"
+
+
   ]
 
 
@@ -163,7 +189,7 @@ const Secone = () => {
         className="
     w-full 
     h-[40vh]          
-    md:h-[147vh]  
+    md:h-[155vh]  
     
     absolute 
     top-[40%] 
@@ -180,7 +206,7 @@ const Secone = () => {
         <h2 className='text-3xl md:text-6xl top-4 text-white font-poppins-bold '>Dr. Achal Gupta</h2>
         <p className='text-[0.6rem]  md:text-2xl text-white px-15 md:px-[25rem] text-center'>A distinguished Brain and Endoscopic Spine Surgeon, Dr. Achal Gupta has dedicated his career to advancing minimally invasive techniques that transform outcomes and patient recovery. Beyond his surgical expertise, he stands as a mentor and guide, shaping the next generation of spine surgeons through hands-on training, cadaver workshops, and academic leadership. His vision for Endospine India is to build a legacy of knowledge, innovation, and compassionate care inspiring doctors across India and beyond.</p>
 
-        <h2 className='text-2xl  text-white md:text-6xl md:mt-10  font-poppins-bold '>Event Highlights - Endospine 25</h2>
+        <h2 className='text-[1rem]  text-white md:text-6xl md:mt-10  font-poppins-bold '>Event Highlights - Endospine 25</h2>
 
         <div className="w-[80vw] h-[22vh] md:h-[80vh] top-[80%] absolute overflow-hidden md:top-[60%] rounded-2xl md:rounded-3xl ">
           <AnimatePresence custom={direction}>

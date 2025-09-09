@@ -87,9 +87,7 @@ const Footer = () => {
                 
                 
                 
-              >2, #B, 1, Vibhuti Khand, Gomti Nagar, Lucknow, Uttar Pradesh 226010,
-                Lucknow, Uttar Pradesh 2260102, #B, 1, Vibhuti Khand, Gomti Nagar,
-                Lucknow, Uttar Pradesh 226010, Lucknow, Uttar Pradesh 226010</h2>
+              > #B, 1, Vibhuti Khand, Gomti Nagar, Lucknow, Uttar Pradesh 226010</h2>
             </div>
 
 
@@ -107,7 +105,7 @@ const Footer = () => {
                 
                 
                 
-                >Info@neuronspine.in</h2>
+                >achalgupta12@gmail.com</h2>
             </div>
 
             <div className='flex gap-1 text-center ' >
@@ -122,7 +120,7 @@ const Footer = () => {
               <h2 className='text-[0.8rem] text-white font-poppins my-auto md:text-2xl '  
                 
                
-                >7080106535 | 0522-4248041</h2>
+                >+91 95598 82889 | +91 90048 583931</h2>
             </div>
 
           </div>

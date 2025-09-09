@@ -12,7 +12,7 @@ const Secthree = () => {
     <div className='overflow-x-hidden overflow-y-hidden '>
       {/* Heading */}
       <motion.h2
-        className='text-[1.1rem] mt-27 md:mt-[5rem] md:text-5xl font-black md:pt-7 text-center text-black my-3 font-poppins'
+        className='text-[1.1rem] mt-5 md:mt-[5rem] md:text-5xl font-black md:pt-7 text-center text-black my-3 font-poppins'
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"

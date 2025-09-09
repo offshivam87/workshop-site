@@ -89,13 +89,13 @@ const MainFooter = () => {
 
                   alt="" className='w-full h-full object-contain' />
               </div>
-              <h2 className='text-[0.6rem] text-white font-poppins my-auto md:text-[1.1rem] '
+              <h2 className='text-[0.6rem] text-white font-poppins my-auto md:text-[1.2rem] '
 
 
 
 
-              >#B, 1, Vibhuti Khand, Gomti Nagar, Lucknow, Uttar Pradesh 226010,
-                Lucknow, Uttar Pradesh 226010</h2>
+              >#B, 1, Vibhuti Khand, Gomti Nagar, Lucknow, Uttar Pradesh 226010
+              </h2>
 
             </div>
             </a>
@@ -109,7 +109,7 @@ const MainFooter = () => {
 
                   alt="" className='w-full h-full object-contain' />
               </div>
-              <h2 className='text-[0.7rem] text-white font-poppins my-auto md:text-[1.1rem] '
+              <h2 className='text-[0.7rem] text-white font-poppins my-auto md:text-[1.2rem] '
 
 
 
@@ -129,7 +129,7 @@ const MainFooter = () => {
 
                     alt="" className='w-full h-full object-contain' />
                 </div>
-                <h2 className='text-[0.7rem] text-white font-poppins my-auto md:text-[1.1rem]'
+                <h2 className='text-[0.7rem] text-white font-poppins my-auto md:text-[1.2rem]'
 
 
                 >+91 95598 82889 | <br />

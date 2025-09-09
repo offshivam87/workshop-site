@@ -32,32 +32,38 @@ const NewsMedia = () => {
       </motion.h2></div>
 
 
-      <div className="boxes grid grid-cols-2 md:grid-cols-2 gap-6 px-4 my-6">
+      <div className="boxes grid grid-cols-2 md:grid-cols-2 md:h-[130vh]  gap-6 px-4 my-6">
         {/* Box 1 */}
         <motion.div
           whileHover={{ rotate: -3 }}
-          className="w-full h-[12vh] md:h-[40vh] md:rounded-2xl rounded bg-amber-800"
+          className="w-full h-[12vh] md:h-[60vh] md:rounded-2xl rounded "
         >
-          {/* <img src="https://ik.imagekit.io/885310/workshop/news%20and%20media.png" className='' alt="" /> */}
+          <img src="https://ik.imagekit.io/885310/workshop/news%20and%20media.png" className=' w-full h-full object-cover object-bottom md:rounded-2xl rounded' alt="" />
         </motion.div>
 
         {/* Box 2 */}
-        <motion.div
-          whileHover={{ rotate: -3 }}
-          className="w-full h-[12vh] md:h-[40vh] md:rounded-2xl rounded bg-amber-800"
-        ></motion.div>
 
-        {/* Box 3 */}
         <motion.div
           whileHover={{ rotate: -3 }}
-          className="w-full h-[12vh] md:h-[40vh] md:rounded-2xl rounded bg-amber-800"
-        ></motion.div>
+          className="w-full h-[12vh] md:h-[60vh] md:rounded-2xl rounded "
+        >
+          <img src="https://ik.imagekit.io/885310/news/saxas.jpg" className=' w-full h-full object-cover object-bottom md:rounded-2xl rounded' alt="" />
+        </motion.div>
 
-        {/* Box 4 */}
-        <motion.div
+         <motion.div
           whileHover={{ rotate: -3 }}
-          className="w-full h-[12vh] md:h-[40vh] md:rounded-2xl rounded bg-amber-800"
-        ></motion.div>
+          className="w-full h-[12vh] md:h-[60vh] md:rounded-2xl rounded "
+        >
+          <img src="https://ik.imagekit.io/885310/news/WhatsApp%20Image%202025-09-09%20at%2013.31.27_ad887a11.jpg" className=' w-full h-full object-cover object-top md:rounded-2xl rounded' alt="" />
+        </motion.div>
+
+         <motion.div
+          whileHover={{ rotate: -3 }}
+          className="w-full h-[12vh] md:h-[60vh] md:rounded-2xl rounded "
+        >
+          <img src="https://ik.imagekit.io/885310/news/WhatsApp%20Image%202025-09-09%20at%2013.31.27_05d2dc4e.jpg" className=' w-full h-full object-cover object-[center_70%] md:rounded-2xl rounded' alt="" />
+        </motion.div>
+        
       </div>
 
 
