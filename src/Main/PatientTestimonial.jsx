@@ -14,34 +14,34 @@ const PatientTestimonial = () => {
         
         {/* Left se aane wala image */}
         <motion.div
-          className="comment w-[60vw] h-[13vh] md:h-[56vh] md:w-[30vw]"
+          className="comment w-[60vw] h-[18vh] md:h-[55vh] md:w-[30vw]"
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <img src={comment1} alt="" className='w-full h-full object-cover' />
+          <img src="https://ik.imagekit.io/885310/doc%20test-05.png" alt="" className='w-full h-full object-contain' />
         </motion.div>
 
         {/* Right se aane wala image */}
          <motion.div
-          className="comment w-[60vw] h-[13vh] md:h-[56vh] md:w-[30vw]"
+          className="comment w-[60vw] h-[18vh] md:h-[55vh] md:w-[30vw]"
           initial={{ y: 100, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <img src={comment1} alt="" className='w-full h-full object-cover' />
+          <img src="https://ik.imagekit.io/885310/doc%20test-06.png" alt="" className='w-full h-full object-contain' />
         </motion.div>
 
         <motion.div
-          className="comment w-[60vw] h-[13vh] md:h-[56vh] md:w-[30vw]"
+          className="comment w-[60vw] h-[18vh] md:h-[55vh] md:w-[30vw]"
           initial={{ x: 100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <img src={comment1} alt="" className='w-full h-full object-cover' />
+          <img src="https://ik.imagekit.io/885310/doc%20test-07.png" alt="" className='w-full h-full object-contain' />
         </motion.div>
 
          
