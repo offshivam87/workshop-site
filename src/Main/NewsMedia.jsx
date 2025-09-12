@@ -121,7 +121,7 @@ const NewsMedia = () => {
           Webinar
         </motion.h2>
 
-        <div className="w-[85vw] h-[20vh] md:w-[80vw]  md:h-[80vh] rounded-2xl mx-auto  mt-5 bg-amber-500 overflow-hidden">
+        <div className="w-[85vw] h-[20vh] md:w-[80vw]  md:h-[80vh] rounded-2xl mx-auto  mt-5  overflow-hidden">
           <iframe
             className="w-full h-full object-cover"
             src="https://www.youtube.com/embed/Q4DxFxgmx1g"

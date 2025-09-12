@@ -20,7 +20,7 @@ const PatientTestimonial = () => {
           transition={{ duration: 1, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <img src="https://ik.imagekit.io/885310/doc%20test-05.png" alt="" className='w-full h-full object-contain' />
+          <img src="https://ik.imagekit.io/885310/Homee%20_Recove-05.png" alt="" className='w-full h-full object-contain' />
         </motion.div>
 
         {/* Right se aane wala image */}
